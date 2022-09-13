@@ -1,0 +1,8 @@
+.parent-1 {
+  height: 768px;
+}
+.parent-1 .box-1 {
+  height: 50%;
+  width: 100%;
+  background-color: #ccc;
+}

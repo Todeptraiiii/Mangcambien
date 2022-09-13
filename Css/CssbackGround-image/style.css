@@ -1,0 +1,13 @@
+.box {
+  height: 500px;
+  background-image: url(https://scontent.fhan18-1.fna.fbcdn.net/v/t39.30808-6/295244360_3501650960122001_6780337181003502772_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=mbKuX_fSmGwAX_IrCTb&_nc_ht=scontent.fhan18-1.fna&oh=00_AT94tuciQ4gG9nhA9TCYM3hDgdkS_-unZ32DpXQdEROxYg&oe=630BF650);
+  background-repeat: repeat-y;
+/* background-size: contain; cover */
+    background-size: contain;
+    padding: 20px;
+    background-repeat: no-repeat;
+    border: 10px solid #188;
+    box-sizing: border-box;
+    background-position: center;
+    /* background-position: top 20px right 18px; */
+}
