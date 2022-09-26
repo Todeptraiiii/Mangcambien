@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iot Theme</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/6080/6080697.png" type="image/x-icon">
+    <link rel="stylesheet" href="/Bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <div class="p-4 bg-primary text-white text-center">
+        <h1>Mạng cảm biến</h1>
+        <p>Đào Văn Tố - B19DCDT198</p>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4 p-3 text-white text-center border border-2" id="cotNhietdo">
+                Nhiệt Độ
+                <p id="nhietdo">29&ordm;C</p>
+            </div>
+            <div class="col-sm-4 p-3 text-white text-center border border-2" id="cotDoam">
+                Độ ẩm
+                <p id="doam">80%</p>
+            </div>
+            <div class="col-sm-4 p-3 text-white text-center border border-2" id="cotAnhsang">
+                Ánh sáng
+                <p id="anhsang">188 lux </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8 p-3">
+                <!-- <button type="button" onclick="show()" id="btnID">Show Img</button> -->
+                <!-- <img id="image" src="./Images/fig9.jpg" 
+                class="img-fluid" alt=""> -->
+
+                <script src="https://code.highcharts.com/highcharts.js"></script>
+                <script src="https://code.highcharts.com/modules/series-label.js"></script>
+                <script src="https://code.highcharts.com/modules/exporting.js"></script>
+                <script src="https://code.highcharts.com/modules/export-data.js"></script>
+                <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+                
+                <figure class="highcharts-figure">
+                  <div id="container"></div>
+                  <p class="highcharts-description">
+                    Basic line chart showing trends in a dataset. This chart includes the
+                    <code>series-label</code> module, which adds a label to each line for
+                    enhanced readability.
+                  </p>
+                </figure>
+
+                <!-- <p class="text text-center text-black-50"> Biểu đồ hiển thị nhiệt độ, độ ẩm, ánh sáng!</p> -->
+            </div>
+            <div class="col-sm-4 p-3 border border-sucess text-center">
+                <div class="hang1 border" id="bgled1">
+                    LED 1
+                    <div class="row p-3">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-outline-secondary" id="led1on">ON</button>
+                            <button type="button" class="btn btn-outline-primary " id="led1off">OFF</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="hang2 border mt-1" id="bgled2">
+                    LED 2
+                    <div class="row p-3">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-outline-primary" id="led2on">ON</button>
+                            <button type="button" class="btn btn-outline-secondary text-black" id="led2off">OFF</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="/Bootstrap/js/bootstrap.js"></script>
+    <script src = "./main.js"></script>
+    <script src="./main2.js"></script>
+</body>
+
+</html> 
