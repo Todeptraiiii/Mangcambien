@@ -4,6 +4,7 @@ const buttonLed2ON  = document.querySelector('#led2on');
 const buttonLed2OFF = document.querySelector('#led2off');
 const bgled1        = document.querySelector('#bgled1');
 const bgled2        = document.querySelector('#bgled2');
+let arrayN = [];
 // console.log(buttonLed2OFF);
 // console.log(bgled1);
 // console.log(buttonLed1OFF);
@@ -32,27 +33,31 @@ buttonLed1OFF.onclick = function(){
 buttonLed2ON.onclick = function(){
     const a = confirm('Xác nhận bật');
     if(a == true){
-        buttonLed2ON.style.backgroundColor = '#1565c0';
-        buttonLed2ON.style.color = 'white';
-        buttonLed2OFF.style.backgroundColor = 'white';
-        buttonLed2OFF.style.color = 'black';
-        bgled2.style.backgroundColor = 'red';
+        // buttonLed2ON.style.backgroundColor = '#1565c0';
+        // buttonLed2ON.style.color = 'white';
+        // buttonLed2OFF.style.backgroundColor = 'white';
+        // buttonLed2OFF.style.color = 'black';
+        // bgled2.style.backgroundColor = 'red';
+        document.getElementById("myImage").src = "./Images/bongdensang.jpg";
     }
 }
 buttonLed2OFF.onclick = function(){
     const a = confirm('Xác nhận tắt');
     if(a == true){
-        buttonLed2OFF.style.backgroundColor = '#1565c0';
-        buttonLed2OFF.style.color = 'white';
-        buttonLed2ON.style.backgroundColor = 'white';
-        buttonLed2ON.style.color = 'black';
-        bgled2.style.backgroundColor = 'white';
+        // buttonLed2OFF.style.backgroundColor = '#1565c0';
+        // buttonLed2OFF.style.color = 'white';
+        // buttonLed2ON.style.backgroundColor = 'white';
+        // buttonLed2ON.style.color = 'black';
+        // bgled2.style.backgroundColor = 'white';
+        document.getElementById("myImage").src = "./Images/bongden.jpg";
     }
 }
 function timechange(){
 // // thay đổi nhiệt độ
 const nhietdo = document.getElementById('nhietdo');
 const changeN1 = Math.floor(Math.floor(Math.random()*45));
+arrayN.push(changeN1);
+console.log(arrayN);
 // console.log(nhietdo.innerText);
 const changeN  = nhietdo.innerText = `${changeN1} \xB0C` ;
 if(changeN1 >= 33){
@@ -87,4 +92,4 @@ else{
     document.getElementById('cotAnhsang').style.backgroundColor = 'purple';
 }
 }
-setInterval(timechange,1000);
+setInterval(timechange,5000);
